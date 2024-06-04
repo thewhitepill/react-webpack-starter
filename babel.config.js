@@ -7,7 +7,12 @@ module.exports = {
         "corejs": "3.36"
       }
     ],
-    "@babel/preset-react"
+    [
+      "@babel/preset-react",
+      {
+        "runtime": "automatic"
+      }
+    ]
   ],
   plugins: [
     "@babel/plugin-transform-runtime"
